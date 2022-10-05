@@ -1,0 +1,63 @@
+﻿@model Services.Usuarios
+
+
+    
+<main class="form-signin w-100 d-flex flex-column justify-content-center align-items-center text-center" style="
+    background-image: url(/Content/img/login/background/bg2.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: calc(100vh + 272px);
+    
+    ">
+    <form method="post" action="/Usuarios/Validar" class="shadow p-5 rounded-pill w-25 bg-light">
+
+        <img class="mb-4" src="~/Content/img/login/logo.png" alt="Yintech" width="150" height="150">
+        <h1 class="h3 mb-3 fw-normal">Inicio Sesión</h1>
+        <div class="form-floating mb-2 ">
+            <input type="email" class="form-control rounded-3 shadow-lg px-1" id="floatingInput" name="Email" placeholder="name@example.com" value="Felicia70@hotmail.com">
+            <label for="floatingInput" class="px-1">Email</label>
+        </div>
+        <div class="form-floating">
+
+            <input type="password" class="form-control px-1 rounded-3 shadow-lg" id="floatingPassword" name="Clave" placeholder="Password" value="Clave 1">
+            <label for="floatingPassword" class="px-1">Clave</label>
+
+        </div>
+
+        <div class="checkbox mb-3 mt-3">
+            <label class="text-start" for="remember-me">
+                <input type="checkbox" value="remember-me"> Recordar mi contraseña
+            </label>
+        </div>
+        <button class="login_btn" type="submit">Iniciar</button>
+        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+    </form>
+    <style>
+
+.login_btn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .login_btn:active {
+        box-shadow: 0px 0px 0px 0px;
+        top: 5px;
+        left: 5px;
+    }
+
+    </style>
+</main>
+
